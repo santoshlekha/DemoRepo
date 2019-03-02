@@ -1,0 +1,33 @@
+package javaprogramsexample;
+
+import java.util.Scanner;
+
+public class PyramidDemo1 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter for pyramid");
+		int noRows=sc.nextInt();
+		int rowcount=1;
+		for(int i=noRows;i>0;i++)
+		{
+			
+			for(int j=1;j<i;j++)
+			{
+				
+				System.out.print("");
+				
+			}
+			
+			for(int j=1;j<noRows;j++)
+			{
+				System.out.print(rowcount+"");
+			}
+			
+			System.out.println();
+			rowcount++;
+		}
+
+	}
+
+}
